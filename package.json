@@ -1,0 +1,15 @@
+{
+  "name": "cargoapp",
+  "version": "1.0.0",
+  "description": "Air Cargo Booking & Tracking System",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm run dev",
+    "seed": "cd backend && node seedFlights.js",
+    "start": "cd backend && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
